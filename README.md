@@ -31,18 +31,17 @@ Each API call can define a few values in its YAML header:
 Variable | Mandatory | Default | Description
 --- | --- | --- | ---
 ``title`` | Y | - | A short description of what that calls does.
-``path`` | N | - | The URL for the API call, including potential parameters.
+``link`` | N | - | The URL for the API call, including potential parameters.
 ``type`` | N | - | Set it to `PUT`, `GET`, `POST`, `DELETE` or nothing (for parts of your documentation that do not relate to an actual API call).
 
 A typical header:
 
 ```
 ---
-path: '/stuff/:id'
+link: '/stuff/:id'
 title: 'Delete a thing'
 type: 'DELETE'
-
-layout: nil
+layout: default
 ---
 ```
 
@@ -55,11 +54,10 @@ Adding a category to your YAML header will allows you to group methods in the na
 ```
 ---
 category: Stuff
-path: '/stuff/:id'
+link: '/stuff/:id'
 title: 'Delete a thing'
 type: 'DELETE'
-
-layout: nil
+layout: default
 ---
 ```
 

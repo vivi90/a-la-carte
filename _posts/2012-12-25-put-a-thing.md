@@ -1,6 +1,6 @@
 ---
 category: Stuff
-path: '/stuff/:id'
+link: '/stuff/:id'
 title: 'Update a thing'
 type: 'PUT'
 layout: default

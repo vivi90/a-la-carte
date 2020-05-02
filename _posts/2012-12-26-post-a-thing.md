@@ -1,6 +1,6 @@
 ---
 category: Stuff
-path: '/stuff'
+link: '/stuff'
 title: 'Post a thing'
 type: 'POST'
 layout: default

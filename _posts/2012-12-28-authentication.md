@@ -1,5 +1,5 @@
 ---
-path: '/login'
+link: '/login'
 title: 'Authenticate'
 layout: default
 ---
