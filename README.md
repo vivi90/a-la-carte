@@ -68,7 +68,7 @@ For more details please see the LICENSE file or: http://www.gnu.org/licenses
 ## Credits
  * Favicon: https://www.favicon.cc/?action=icon&file_id=819961
  * Syntax highlighting stylesheet: https://github.com/taniarascia/startjekyll/blob/gh-pages/_sass/_syntax-highlighting.scss
- * [normalize.css v2.1.0](https://git.io/normalize)
+ * [normalize.css v8.0.1](https://github.com/necolas/normalize.css)
 
 ## Contact
  * [Vivien Richter](mailto:vivien-richter@outlook.de)
