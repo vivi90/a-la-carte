@@ -19,7 +19,7 @@ It is a simple universal [Jekyll](https://jekyllrb.com) based boilerplate to bui
 
 ### Adding a new API call
 
-You can add a new API call by simply adding a new post in the `_posts` folder. Jekyll by default forces you to specify a date in the file path: it makes us sad pandas too, but you'll have to stick to this format. You can use dates to control the order in which API calls are displayed in the interface.
+You can add a new API call by simply adding a new [Markdown](https://guides.github.com/features/mastering-markdown) file in the `_endpoints` folder. You can use numbers in the filename to control the order in which API calls are displayed in the interface.
 
 Each API call can define a few values in its YAML header:
 
@@ -36,11 +36,10 @@ A typical header:
 link: '/stuff/:id'
 title: 'Delete a thing'
 type: 'DELETE'
-layout: default
 ---
 ```
 
-We then describe the request and response (or whatever else you wish to talk about) in the body of our post. Check the placeholders present in the `_posts` folder to get an idea of what it can look like.
+We then describe the request and response (or whatever else you wish to talk about) in the body of our post. Check the placeholders present in the `_endpoints` folder to get an idea of what it can look like.
 
 ### Grouping calls
 
@@ -52,14 +51,13 @@ category: Stuff
 link: '/stuff/:id'
 title: 'Delete a thing'
 type: 'DELETE'
-layout: default
 ---
 ```
 
 ### Edit the design
 
 The default UI is mostly described through the `css/style.css` file and a couple short jQuery scripts in the `/_layouts/default.html` layout.
-To use different layouts at the same time, just create multiple entry points like `index.html` but with different layout directive in it.
+To use different designs at the same time, just create multiple entry points like `index.html` but with different layout directive in it.
 
 # Contact
  * [Vivien Richter](mailto:vivien-richter@outlook.de)
