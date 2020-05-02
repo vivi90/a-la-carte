@@ -6,6 +6,7 @@ It is a simple universal [Jekyll](https://jekyllrb.com) based boilerplate to bui
 ## Features
  * Just plain static documentation.
  * Flexible endpoint documentation by simple [Markdown](https://guides.github.com/features/mastering-markdown).
+ * Supports different layouts at the same time.
  * Fancy design.
 
 ## Install
@@ -57,7 +58,8 @@ layout: default
 
 ### Edit the design
 
-The default UI is mostly described through the `css/style.css` file and a couple short jQuery scripts in the `/_layouts/default.html` layout. Hack it to oblivion.
+The default UI is mostly described through the `css/style.css` file and a couple short jQuery scripts in the `/_layouts/default.html` layout.
+To use different layouts at the same time, just create multiple entry points like `index.html` but with different layout directive in it.
 
 # Contact
  * [Vivien Richter](mailto:vivien-richter@outlook.de)
