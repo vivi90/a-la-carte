@@ -3,8 +3,7 @@ category: Stuff
 path: '/stuff'
 title: 'Post a thing'
 type: 'POST'
-
-layout: nil
+layout: default
 ---
 
 This method allows users to create a new thing.
