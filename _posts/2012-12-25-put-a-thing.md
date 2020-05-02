@@ -3,7 +3,6 @@ category: Stuff
 link: '/stuff/:id'
 title: 'Update a thing'
 type: 'PUT'
-layout: default
 ---
 
 This method allows the user to retrieve his stuff.

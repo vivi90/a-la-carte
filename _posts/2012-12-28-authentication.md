@@ -1,7 +1,6 @@
 ---
 link: '/login'
 title: 'Authenticate'
-layout: default
 ---
 
 This method allows users to retrieve stuff.

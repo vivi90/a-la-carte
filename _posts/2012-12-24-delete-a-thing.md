@@ -3,7 +3,6 @@ category: Stuff
 link: '/stuff/:id'
 title: 'Delete a thing'
 type: 'DELETE'
-layout: default
 ---
 
 This method allows the user to post a new thing to his stuff.

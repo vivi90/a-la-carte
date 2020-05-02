@@ -3,7 +3,6 @@ category: Stuff
 link: '/stuff'
 title: 'Post a thing'
 type: 'POST'
-layout: default
 ---
 
 This method allows users to create a new thing.
