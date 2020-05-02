@@ -59,6 +59,14 @@ type: 'DELETE'
 The default UI is mostly described through the `css/style.css` file and a couple short jQuery scripts in the `/_layouts/default.html` layout.
 To use different designs at the same time, just create multiple entry points like `index.html` but with different layout directive in it.
 
-# Contact
+## License
+This project is free software under the terms of the GNU General Public License v3 as published by the Free Software Foundation.
+It is distributed WITHOUT ANY WARRANTY (without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE).
+For more details please see the LICENSE file or: http://www.gnu.org/licenses
+
+## Credits
+ * Favicon: https://www.favicon.cc/?action=icon&file_id=819961
+
+## Contact
  * [Vivien Richter](mailto:vivien-richter@outlook.de)
  * [GitHub repository](https://github.com/vivi90/a-la-carte.git)
