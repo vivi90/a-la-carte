@@ -2,14 +2,16 @@
 title: "API documentation"
 
 # Where things are
+sass:
+  sass_dir: _assets/css
 collections:
   endpoints:
     output: true
-    permalink: /:title
+    permalink: :title
 
 # Handling Reading
 safe: false
-include: ["_endpoints"]
+include: ["_endpoints", "_assets"]
 exclude: ["README.md"]
 
 # Markdown Processors
