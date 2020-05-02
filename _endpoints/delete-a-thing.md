@@ -18,9 +18,11 @@ This method allows the user to post a new thing to his stuff.
 Sends back a collection of things.
 
 ```Status: 200 Deleted```
-```{
+```javascript
+{
     code: 200,
     message: 'Your thing (id: 736) was deleted'
-}```
+}
+```
 
 For errors responses, see the [response status codes documentation](#/response-status-codes).

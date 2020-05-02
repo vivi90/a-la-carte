@@ -7,6 +7,7 @@ It is a simple universal [Jekyll](https://jekyllrb.com) based boilerplate to bui
  * Just plain static documentation.
  * Flexible endpoint documentation by simple [Markdown](https://guides.github.com/features/mastering-markdown).
  * Supports different layouts at the same time.
+ * Syntax highlighting.
  * Fancy design.
 
 ## Install
@@ -66,6 +67,8 @@ For more details please see the LICENSE file or: http://www.gnu.org/licenses
 
 ## Credits
  * Favicon: https://www.favicon.cc/?action=icon&file_id=819961
+ * Syntax highlighting stylesheet: https://github.com/taniarascia/startjekyll/blob/gh-pages/_sass/_syntax-highlighting.scss
+ * [normalize.css v2.1.0](https://git.io/normalize)
 
 ## Contact
  * [Vivien Richter](mailto:vivien-richter@outlook.de)

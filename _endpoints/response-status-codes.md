@@ -12,7 +12,8 @@ Successes differ from errors in that their body may not be a simple response obj
 When [retrieving stuff](#get-stuff) for example:
 
 ```Status: 200 OK```
-```{
+```javascript
+{
     {
         id: thing_1,
         name: 'My first thing'
@@ -21,7 +22,8 @@ When [retrieving stuff](#get-stuff) for example:
         id: thing_2,
         name: 'My second thing'
     }
-}```
+}
+```
 
 ### Error
 
@@ -33,7 +35,9 @@ Error responses are simply returning [standard HTTP error codes](http://www.w3.o
 For a call with an invalid authentication token for example:
 
 ```Status: 401 Access denied```
-```{
+```javascript
+{
     code: 401,
     message: 'Access denied: invalid authentication token.'
-}```
+}
+```

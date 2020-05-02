@@ -16,7 +16,8 @@ This method allows users to retrieve stuff.
 Sends back a collection of things.
 
 ```Status: 200 OK```
-```{
+```javascript
+{
     {
         id: thing_1,
         name: 'My first thing'
@@ -25,6 +26,7 @@ Sends back a collection of things.
         id: thing_2,
         name: 'My second thing'
     }
-}```
+}
+```
 
 For errors responses, see the [response status codes documentation](#/response-status-codes).

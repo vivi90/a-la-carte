@@ -12,9 +12,6 @@ safe: false
 include: ["_endpoints"]
 exclude: ["README.md"]
 
-# Conversion
-highlighter: pygments
-
 # Markdown Processors
 kramdown:
   input: GFM

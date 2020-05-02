@@ -14,16 +14,19 @@ This method allows the user to retrieve his stuff.
 * **The body can't be empty** and must include at least the name attribute, a `string` that will be used as the name of the thing.
 
 ```Authentication: bearer f862f658-ad89-4fcb-995b-7a4c50554ff6```
-```{
+```javascript
+{
     name: 'My new thing'
-}```
+}
+```
 
 ### Response
 
 Sends back a collection of things.
 
 ```Status: 200 OK```
-```{
+```javascript
+{
     {
         id: thing_1,
         name: 'My first thing'
@@ -32,6 +35,7 @@ Sends back a collection of things.
         id: thing_2,
         name: 'My second thing'
     }
-}```
+}
+```
 
 For errors responses, see the [response status codes documentation](#/response-status-codes).
