@@ -1,9 +1,10 @@
-# Site Settings
+# Site properties
 title: "API documentation"
+description: "Simple flexible static API documentation."
+url: "https://vivi90.github.io/a-la-carte"
+baseurl: ""
 
 # Where things are
-sass:
-  sass_dir: _assets/css
 collections:
   endpoints:
     output: true
@@ -11,8 +12,7 @@ collections:
 
 # Handling Reading
 safe: false
-include: ["_endpoints", "_assets"]
-exclude: ["README.md"]
+exclude: ["README.md", "LICENSE.txt"]
 
 # Markdown Processors
 kramdown:

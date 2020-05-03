@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <head lang="en" dir="ltr">
-  <meta charset='utf-8'/>
-  <meta name='description' content='Simple static API documentation.'>
-  <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+  <meta charset="utf-8">
+  <meta name="description" content="{{ site.description }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>{{ site.title }}</title>
-  <link rel="stylesheet" href="_assets/css/main.css">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="stylesheet" href="css/default.css">
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
 </head>
 <body>
   <!-- Navigation -->
-  <nav id='sidebar'>
+  <nav id="sidebar">
   	<h1>{{ site.title }}</h1>
-  	<ul id='links'>
+  	<ul id="links">
   	  {% for endpoint in site.endpoints %}
   	    {% if endpoint.category == null %}
-  	    <li><a href='#{{ endpoint.url }}'>{{ endpoint.title }}</a></li>
+  	    <li><a href="#{{ endpoint.url }}">{{ endpoint.title }}</a></li>
   	    {% endif %}
   	  {% endfor %}
       {% assign categories = site.endpoints | group_by: "category" %}
@@ -23,7 +25,7 @@
   	      <ul>
   	      {% assign endpoints = site.endpoints | where: "category", category.name %}
   	      {% for endpoint in endpoints %}
-  	        <li class='{{ endpoint.type }}'><a href='#{{ endpoint.url }}'>{{ endpoint.title }}</a></li>
+  	        <li class="{{ endpoint.type }}"><a href="#{{ endpoint.url }}">{{ endpoint.title }}</a></li>
   	      {% endfor %}
   	      </ul>
   	    </li>
@@ -33,11 +35,11 @@
   </nav>
 
   <!-- Content -->
-  <section id='content'>
+  <section id="content">
   {% assign endpoints = site.endpoints | sort: "category" %}
   {% for endpoint in endpoints %}
-    <article class='{{ endpoint.type }}'>
-      <a name='{{ endpoint.url }}' href='#{{ endpoint.url }}'><h2>{% if endpoint.type %}<code><b>{{ endpoint.type }}</b> {{ endpoint.link }}</code> {% endif %}{{ endpoint.title }}</h2></a>
+    <article class="{{ endpoint.type }}">
+      <a name="{{ endpoint.url }}" href="#{{ endpoint.url }}"><h2>{% if endpoint.type %}<code><b>{{ endpoint.type }}</b> {{ endpoint.link }}</code> {% endif %}{{ endpoint.title }}</h2></a>
       <section class='body'>
         {{ endpoint.content }}
       </section>
@@ -46,7 +48,6 @@
   </section>
 
   <!--[if lt IE 9]><script src='http://html5shim.googlecode.com/svn/trunk/html5.js'></script><![endif]-->
-  <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
-  <script src='_assets/js/default.js'></script>
+  <script src="js/default.js"></script>
 </body>
 </html>

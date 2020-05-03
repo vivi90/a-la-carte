@@ -1,3 +1,4 @@
+// UI logic.
 $(document).ready(function(){
     // Expanding the article on link click and scrolling down to it
     $('#sidebar a').each(function () {
@@ -20,11 +21,11 @@ $(document).ready(function(){
     $("#content").prepend(
         $("<a id=\"toggle-all\">+ Show all</a>").click(function(){
             if ($("#toggle-all").html() == "- Hide all") {
-                $("article").children(".body").hide("fast", "swing", function(){
+                $("article").children(".body").hide("fast", "linear", function(){
                     $("#toggle-all").html("+ Show all");
                 });
             } else {
-                $("article").children(".body").show("fast", "swing", function(){
+                $("article").children(".body").show("fast", "linear", function(){
                     $("#toggle-all").html("- Hide all");
                 });
             }
@@ -38,7 +39,7 @@ $(document).ready(function(){
         if (anchor != $(this).children("a").attr("name")) $(this).children(".body").hide();
         // Add hide / show toggle function.
         $(this).children("a").click(function(){
-            $(this).siblings(".body").toggle();
+            $(this).siblings(".body").toggle("fast", "linear");
         });
     });
 });
