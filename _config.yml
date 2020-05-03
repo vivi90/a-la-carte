@@ -5,6 +5,8 @@ url: "https://vivi90.github.io/a-la-carte"
 baseurl: ""
 
 # Where things are
+sass:
+  sass_dir: css
 collections:
   endpoints:
     output: true
